@@ -28,7 +28,7 @@ const HomePage = () => {
     // getPagePosts();
   }, [token]);
 
-  // let accessToken = 'EAAFYhTKtPo4BAGB75pzSCxqomodHRdspFmNpreaaVDyplZCSjbu8vxHSTnzk4NLX6xyDkoDKSgefc2DRuDz5PCTry1ZAG7E5AvCNGLYdC24VJNO2GUZB2JYJ7AMc9kcRxkVn0AclX9IwzB4i3OJq9zXZCZCAeT6wdzURZB9Sxj2AdMp82A3lLjRbRNvq2EXAFjLNysN5lcwTVB0PlB2PCC'
+  
 
   // async function getInstaPosts() {
   //   try {
