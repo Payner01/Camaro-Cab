@@ -1,4 +1,4 @@
-import { Carousel } from 'mdb-ui-kit'
+import {Murdered} from '../../images'
 
 const CarouselImage = (props) => {
 
@@ -35,10 +35,10 @@ const CarouselImage = (props) => {
                 <div class="carousel-inner">
                     {/* < />!-- Single item --> */}
                     <div class="carousel-item active">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100" alt="Sunset Over the City" />
+                        <img src={Murdered} class="d-block w-100" alt="Sunset Over the City" />
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h5>Camaro Cab</h5>
+                            <p>Your Uber, Upgraded.</p>
                         </div>
                     </div>
 

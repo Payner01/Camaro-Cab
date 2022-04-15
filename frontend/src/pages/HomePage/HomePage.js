@@ -8,27 +8,12 @@ const HomePage = () => {
   // The "user" value from this Hook contains the decoded logged in user information (username, first name, id)
   // The "token" value is the JWT token that you will send in the header of any request requiring authentication
   const [user, token] = useAuth();
-  const [cars, setCars] = useState([]);
+  
 
   useEffect(() => {
-    const fetchCars = async () => {
-      try {
-        let response = await axios.get("http://127.0.0.1:8000/api/cars/", {
-          headers: {
-            Authorization: "Bearer " + token,
-          },
-        });
-        setCars(response.data);
-      } catch (error) {
-        console.log(error.message);
-      }
-    };
-    // fetchCars();
-    // getInstaPosts();
-    // getPagePosts();
   }, [token]);
 
-  // let accessToken = 'EAAFYhTKtPo4BAGB75pzSCxqomodHRdspFmNpreaaVDyplZCSjbu8vxHSTnzk4NLX6xyDkoDKSgefc2DRuDz5PCTry1ZAG7E5AvCNGLYdC24VJNO2GUZB2JYJ7AMc9kcRxkVn0AclX9IwzB4i3OJq9zXZCZCAeT6wdzURZB9Sxj2AdMp82A3lLjRbRNvq2EXAFjLNysN5lcwTVB0PlB2PCC'
+  
 
   // async function getInstaPosts() {
   //   try {
@@ -72,11 +57,10 @@ const HomePage = () => {
 
   // console.log(picture)
   return (
-    <div className="container">
-      <h1>Home Page for {user.username}! Welcome to Camaro Cab</h1>
-      {/* <img src={picture.media_url}/> */}
+    <div>
       <Carousel />
     </div>
+    
   );
 };
 

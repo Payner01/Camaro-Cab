@@ -1,19 +1,23 @@
 ul {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   list-style-type: none;
+  /* padding: 0, 1rem, 0, 1rem; */
 }
 
 li {
   font-size: 1.25rem;
+  padding-right: 1rem;
 }
 
 .navBar {
-  background: steelblue;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(14, 14, 14);
   box-shadow: 4px 2px 5px gray;
   color: white;
-  margin-bottom: 2rem;
-  padding: 1.5rem 2rem;
+  /* margin-bottom: 2rem; */
+  padding: 1rem;
 }
 
 .navBar button {

@@ -8,6 +8,10 @@
   box-sizing: inherit;
 }
 
+body {
+  background: #282828 !important; 
+}
+
 html {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -15,6 +19,7 @@ html {
 
 p {
   font-size: 20px;
+  color: white;
 }
 
 button {

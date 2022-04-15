@@ -1,0 +1,25 @@
+.cards{
+    display: flex;
+    justify-content: center;
+    
+}
+.card{
+    margin: 1rem;
+    width: 50%;
+    height: 75%;
+}
+
+.card-body {
+    background-color: rgb(59, 59, 59);
+}
+h1 {
+    color: white;
+}
+h5 {
+    color: white;
+}
+.title {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+}
