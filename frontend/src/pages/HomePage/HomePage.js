@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-
+import Carousel from "../../components/Carousel/Carousel";
 import axios from "axios";
 import useAuth from "../../hooks/useAuth";
 
@@ -23,17 +23,59 @@ const HomePage = () => {
         console.log(error.message);
       }
     };
-    fetchCars();
+    // fetchCars();
+    // getInstaPosts();
+    // getPagePosts();
   }, [token]);
+
+  // let accessToken = 'EAAFYhTKtPo4BAGB75pzSCxqomodHRdspFmNpreaaVDyplZCSjbu8vxHSTnzk4NLX6xyDkoDKSgefc2DRuDz5PCTry1ZAG7E5AvCNGLYdC24VJNO2GUZB2JYJ7AMc9kcRxkVn0AclX9IwzB4i3OJq9zXZCZCAeT6wdzURZB9Sxj2AdMp82A3lLjRbRNvq2EXAFjLNysN5lcwTVB0PlB2PCC'
+
+  // async function getInstaPosts() {
+  //   try {
+  //     let response = await axios.get(`https://graph.facebook.com/v13.0/me/accounts?access_token=${accessToken}`, {
+  //       headers: {
+  //         Authorization: "Bearer " + token,
+
+  //       },
+        
+  //     });
+  //     console.log(response)
+  //   } catch (error) {
+  //     console.log(error.message)
+  //   }
+  // }
+
+  // media = "https://graph.facebook.com/v13.0/17841405822304914/media?access_token={access-token}"
+  // businessPage = "https://graph.facebook.com/v13.0/168900265252875?fields=instagram_business_account&access_token="
+
+  // const [picture, setPicture] = useState([]);
+
+  // async function getPagePosts() {
+  //   try {
+  //     let response = await axios.get(`https://graph.facebook.com/v13.0/17881204013536233?fields=media_url&access_token=${accessToken}`, {
+  //       headers: {
+  //         Authorization: "Bearer " + token,
+  //       },
+  //     });
+  //     console.log(response.data)
+  //     setPicture(response.data)
+  //     console.log(picture)
+  //   } catch (error) {
+  //     console.log(error.message)
+  //   }
+  // }
+
+  
+
+
+
+
+  // console.log(picture)
   return (
     <div className="container">
       <h1>Home Page for {user.username}! Welcome to Camaro Cab</h1>
-      {cars &&
-        cars.map((car) => (
-          <p key={car.id}>
-            {car.year} {car.model} {car.make}
-          </p>
-        ))}
+      {/* <img src={picture.media_url}/> */}
+      <Carousel />
     </div>
   );
 };
