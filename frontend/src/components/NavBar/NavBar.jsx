@@ -17,7 +17,12 @@ const Navbar = () => {
         </li>
         <li className="brand">
           <Link to="about" style={{ textDecoration: "none", color: "white" }}>
-            <b>Our Rides</b>
+            <b>About Us</b>
+          </Link>
+        </li>
+        <li className="brand">
+          <Link to="schedule" style={{ textDecoration: "none", color: "white" }}>
+            <b>Schedule</b>
           </Link>
         </li>
         
