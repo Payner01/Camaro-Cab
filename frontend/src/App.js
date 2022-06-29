@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 
 // Util Imports
 import PrivateRoute from "./utils/PrivateRoute";
-import SchedulePage from "./pages/SchedulePage/SchedulePgae";
+import SchedulePage from "./pages/SchedulePage/SchedulePage";
 
 function App() {
   return (
